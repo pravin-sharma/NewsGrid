@@ -12,11 +12,13 @@
   --tech-color: #009cff;
 }
 
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   font-family: "Lato", sans-serif;
@@ -37,8 +39,6 @@ img {
   width: 100%;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -50,6 +50,10 @@ h6 {
 
 p{
   margin-bottom: 0.5rem;
+}
+
+.l-heading{
+  font-size: 2rem;
 }
 
 .category{
@@ -85,7 +89,22 @@ p{
 }
 
 .btn:hover{
-  opacity: 0.8;
+  background: #fff;
+  color: #333;
+}
+.btn-primary:hover{
+  background: #c72727e1;
+  color: #fff;
+}
+.btn-secondary:hover{
+  background: #f99500dc;
+  color: #fff;
+}
+
+
+.btn-block{
+  width: 100%;
+  text-align: center;
 }
 
 .card{
@@ -131,6 +150,18 @@ p{
   margin: auto;
 }
 
+.page-container{
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.page-container > article:first-child{
+  grid-row: 1/span 3;
+}
+
+/* Navbar */
 #main-nav {
   z-index: 2;
   background: white;
@@ -271,6 +302,9 @@ p{
   background: var(--primary-color);
   color: #fff;
 }
+.footer-container input[type='submit']:hover{
+  opacity: 0.8;
+}
 
 /* Footer - Site Link */
 .footer-container .list li{
@@ -279,8 +313,7 @@ p{
 
 .footer-container .list a{
   color: #fff;
-  
-}
+} 
 
 .footer-container .list a:hover{
   color: var(--primary-color);
