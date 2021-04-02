@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+ul{
+  list-style-type: none;
+}
+
 img {
   width: 100%;
 }
@@ -42,6 +46,10 @@ h4,
 h5,
 h6 {
   font-family: "Staatliches", sans-serif;
+}
+
+p{
+  margin-bottom: 0.5rem;
 }
 
 .category{
@@ -64,7 +72,7 @@ h6 {
   display: inline-block;
   background: var(--dark-color);
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 .btn-light{
   background: var(--light-color);
@@ -78,6 +86,44 @@ h6 {
 
 .btn:hover{
   opacity: 0.8;
+}
+
+.card{
+  background: #fff;
+  padding: 1rem;
+}
+
+.bg-dark{
+  background: var(--dark-color);
+  color: #fff;
+}
+.bg-primary{
+  background: var(--primary-color);
+  color: #fff;
+}
+.bg-secondary{
+  background: var(--secondary-color-color);
+  color: #fff;
+}
+
+.py-1{
+  padding: 1.5rem 0;
+}
+.py-2{
+  padding: 2rem 0;
+}
+.py-3{
+  padding: 3rem 0;
+}
+
+.p-1{
+  padding: 1.5rem;
+}
+.p-2{
+  padding: 2rem;
+}
+.p-3{
+  padding: 3rem;
 }
 
 .container {
@@ -169,4 +215,88 @@ h6 {
 .showcase .showcase-container .showcase-content p{
   margin-bottom: 1rem;
 }
+
+/* Articles */
+#home-article .article-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#home-article .article-container > *:first-child,
+#home-article .article-container > *:last-child{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+#home-article .article-container > *:last-child{
+  grid-column: 2 / span 2;
+}
+
+/* Footer */
+
+#main-footer{
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Footer - Logo */
+.footer-container img{
+  width: 120px;
+}
+
+/* Footer - New Letter */
+.footer-container input[type='email']{
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: .5rem;
+  border: none;
+}
+
+.footer-container input[type='submit']{
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Footer - Site Link */
+.footer-container .list li{
+  border-bottom: #555 dotted 1px;
+}
+
+.footer-container .list a{
+  color: #fff;
+  
+}
+
+.footer-container .list a:hover{
+  color: var(--primary-color);
+}
+
+/* Footer - Join Our Club */
+
+
+/* Footer - Copyright */
+.footer-container > *:last-child{
+  grid-column: 1 /span 4;
+  text-align: center;
+  background: #444;
+  padding: 0.5rem;
+}
+
+
+
 
